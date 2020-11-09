@@ -1,0 +1,29 @@
+.Pokecard-card {
+    display: flex;
+    flex-direction: column;
+
+    padding: 30px;
+    min-width: 150px;
+    width: 250px;
+    border: 3px solid darkgoldenrod;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 10px;
+    box-shadow: 7px 10px 12px -5px grey;
+}
+
+.Pokecard-title {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+}
+
+.Pokecard-img {
+    background-color: lightpink;
+    padding: 20px;
+}
+
+.Pokecard-data {
+    font-size: 85%;
+}
+
