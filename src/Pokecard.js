@@ -7,6 +7,9 @@ class Pokecard extends Component {
     render() {
         const { id, name, type, base_experience} = this.props;
         
+        // udemy example - if number is less than or equal to 999, then add zeroes to number but take only the last three numbers, or just return number
+        // let padToThree = (number) => (number <= 999 ? `00${number}`.slice(-3) : number );
+
         let paddedId = id.toString().padStart(3, '0');
         let imgSrc = `${POKE_API}${paddedId}.png`;
             
