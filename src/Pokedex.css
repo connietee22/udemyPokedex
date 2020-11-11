@@ -1,12 +1,14 @@
 h2 {
     text-transform: uppercase;
-    margin: 20px 0 10px 0;;
+    
 }
 
 .Pokedex-cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-around;
+    justify-content: space-around;
+    margin: 10px 0 30px 0;
+
 }
 
 .winner {
