@@ -31,3 +31,17 @@ img {
   margin: 0 auto;
 }
 
+.headerContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.pokedex {
+  width: 100%;
+  height: 100%;
+  --animate-duration: 3s;
+}
+
+
+
