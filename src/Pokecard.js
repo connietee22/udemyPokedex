@@ -17,7 +17,7 @@ class Pokecard extends Component {
                 <div className="Pokecard-card">
                     <h2 className="Pokecard-title">{name}</h2>
                    {/* { id.length < 3 ? id.padStart(3, '0') : true } */}
-                    <img src={imgSrc} className="Pokecard-img" alt={name}/>
+                    <div className="Pokecard-img"><img src={imgSrc} alt={name}/></div>
                     <span className="Pokecard-data">Type: <strong>{type}</strong></span>
                     <span className="Pokecard-data">Base Experience: <strong>{base_experience}</strong></span>
                 </div>

@@ -3,6 +3,10 @@ h2 {
     
 }
 
+h4 {
+    margin: 0;
+}
+
 .Pokedex-cards {
     display: flex;
     flex-wrap: wrap;
@@ -11,13 +15,24 @@ h2 {
 
 }
 
-.winner {
+
+
+.loseClass,
+.winClass {
+    color: white;
     width: 100px;
     margin-left: 20px;
-    background-color: pink;
     text-align: center;
     font-weight: bold;
-    animation: blinker 3s linear infinite;
+    animation: blinker 4s linear infinite;
+}
+
+.winClass {
+  background-color: green;
+}
+
+.loseClass {
+    background-color: red;
 }
 
 .sumWinner {
@@ -26,6 +41,6 @@ h2 {
 
 @keyframes blinker {
     50% {
-        opacity: 0;
+        opacity: .5;
     }
 }

@@ -3,26 +3,22 @@ import Pokecard from './Pokecard';
 import './Pokedex.css';
 
 class Pokedex extends Component {
-    // this is the default props - why put in here? BECAUSE this component is where the info will be pulled!
-    static defaultProps = {
-        pokemon: [
-            {id: 4, name: 'Charmander', type: 'fire', base_experience: 62},
-            {id: 7, name: 'Squirtle', type: 'water', base_experience: 63},
-            {id: 11, name: 'Metapod', type: 'bug', base_experience: 72},
-            {id: 12, name: 'Butterfree', type: 'flying', base_experience: 178},
-            {id: 25, name: 'Pikachu', type: 'electric', base_experience: 112},
-            {id: 39, name: 'Jigglypuff', type: 'normal', base_experience: 95},
-            {id: 94, name: 'Gengar', type: 'poison', base_experience: 225},
-            {id: 113, name: 'Eevee', type: 'normal', base_experience: 65}
-        ]
-    };
+
     render() {
+        let handHeader;
+        if (this.props.isWinner) {
+            handHeader = <p className="winClass">WINNER!</p>;
+        } else {
+            handHeader = <p className="loseClass">LOSER!</p>;
+        }
         return(
             <div className="Pokedex">
                 <h2>Pokedex hand</h2>
                 <div className="sumWinner">
-                    <p>Total: {this.props.experience}</p> 
-                    <p className="winner">{this.props.isWinner ? "WINNER!" : "LOSER!"} </p>
+                    <h4>Total: {this.props.experience}</h4>
+                     {/*THIS IS TOO LONG - REPLACE WITH handHeader */}
+                     {handHeader}
+                    {/* <p className={this.props.isWinner ? "winClass" : "loseClass"}>{this.props.isWinner ? "WINNER!" : "LOSER!"} </p> */}
                 </div>
                 <div className="Pokedex-cards">
                     { this.props.pokemon.map(poke => (

@@ -23,6 +23,15 @@
     padding: 20px;
 }
 
+.Pokecard-img img {
+    transition: all ease .4s;
+}
+
+.Pokecard-img img:hover {
+    transform: scale(1.2);
+    opacity: .8;
+}
+
 .Pokecard-data {
     font-size: 85%;
 }
